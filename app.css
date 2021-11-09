@@ -1,0 +1,201 @@
+html, body {
+  height: 100%;
+  font-family: 'Dosis', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  /* display: flex; */
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.display {
+  height: 100%;
+  width: 100%;
+  background: #000000;
+  background: rgb(12,50,24);
+  background: -webkit-linear-gradient(151deg, rgba(12,50,24,1) 0%, rgba(9,27,36,1) 49%, rgba(61,15,41,1) 100%);
+  background: -o-linear-gradient(151deg, rgba(12,50,24,1) 0%, rgba(9,27,36,1) 49%, rgba(61,15,41,1) 100%);
+  background: linear-gradient(299deg, rgba(12,50,24,1) 0%, rgba(9,27,36,1) 49%, rgba(61,15,41,1) 100%);
+}
+
+.button {
+  font-weight: bold;
+  font-size: 22px;
+  border: 3px solid #39ff7b;
+  color: #39ff7b;
+  padding: 10px 0;
+  padding-bottom: 15px;
+  opacity: 0.25;
+  display: inline-block;
+  width: 170px;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -88px;
+  z-index: 1;
+  text-align: center;
+}
+
+.button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.trust-score {
+  margin-bottom: 15px;
+  font-size: 26px;
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  margin-left: -150px;
+  color: #fff;
+  text-align: center;
+  width: 300px;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.02);
+  z-index: 1;
+}
+
+.panel {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.legend {
+  font-size: 22px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.legend-item {
+  margin-bottom: 2px;
+}
+
+.legend-item::before{
+  margin-right: 20px;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 7.5px;
+}
+
+.legend-item.good {
+  color: #39ff7b;
+}
+
+.legend-item.good::before {
+  background-color: #39ff7b;
+}
+
+.legend-item.bad {
+  color: #ff3aa9;
+}
+
+.legend-item.bad::before {
+  background-color: #ff3aa9;
+}
+
+.legend-item.confused {
+  color: #37c3ff;
+}
+
+.legend-item.confused::before {
+  background-color: #37c3ff;
+}
+
+.panel .selection {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  opacity: 0.25;
+}
+
+.panel .selection:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.modal-backdrop {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 2;
+  height: 100%;
+}
+
+.modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 300px;
+  height: 500px;
+  z-index: 3;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  text-align: center;
+  padding: 30px;
+  color: #ccc;
+  font-size: 30px;
+}
+
+.selection-option {
+  font-size: 22px;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 10px;
+  padding-bottom: 15px;
+  opacity: 0.25;
+  display: block;
+  margin-top: 20px;
+}
+
+.selection-option:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.links {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.links > a {
+  opacity: 0.25;
+}
+
+.links > a:hover {
+  opacity: 0.75;
+}
+
+.github {
+  width: 40px;
+  height: 40px;
+}
+
+
+
+// WEBPACK FOOTER //
+// ./src/App.css
